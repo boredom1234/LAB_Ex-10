@@ -6,7 +6,7 @@ const Modal = () => {
     <div>
       {/* Open the modal using document.getElementById('ID').showModal() method */}
       <button
-        className="btn"
+        className="btn glass"
         onClick={() => document.getElementById("my_modal_5").showModal()}
       >
         INQUIRE
