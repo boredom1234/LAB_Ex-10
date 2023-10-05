@@ -1,5 +1,5 @@
 import React from "react";
-import CurrentDate from './CurrentDate';
+import CurrentDate from "./CurrentDate";
 
 const Modal = () => {
   return (
@@ -17,11 +17,30 @@ const Modal = () => {
           <p className="py-4">
             - Name: Sarah Johnson <br />- Contact Number: 555-123-4567 <br />-
             Owner Name: John Smith <br />- Advance Payment: $500 <br />- Email:
-            sarah.j@example.com <br /><CurrentDate /> <br /> <br />
-            <textarea
-              placeholder="Type your details here..."
-              className="textarea textarea-success textarea-sm w-full max-w-lg"
-            ></textarea>
+            sarah.j@example.com <br />
+            <CurrentDate /> <br /> <br />
+            <div className="card w-100 bg-base-200 text-neutral-content">
+              <div className="card-body items-center text-center">
+                <span className="label-text"><b>Inquiry Form</b></span>
+                <input
+                  type="text"
+                  placeholder="Enter Your Name"
+                  className="input input-bordered input-primary w-full max-w-sm"
+                />
+
+                <input
+                  type="text"
+                  placeholder="Enter your Email Here..."
+                  className="input input-bordered input-primary w-full max-w-sm"
+                />
+
+                <input
+                  type="text"
+                  placeholder="Enter your Contact Number..."
+                  className="input input-bordered input-primary w-full max-w-sm"
+                />
+              </div>
+            </div>
           </p>
           <div
             className="modal-action"
@@ -33,7 +52,10 @@ const Modal = () => {
           >
             <form method="dialog">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-outline btn-success" style={{ marginRight: "19rem" }}>
+              <button
+                className="btn btn-outline btn-success"
+                style={{ marginRight: "19rem" }}
+              >
                 Submit
               </button>
               <button className="btn btn-outline btn-error">Close</button>
